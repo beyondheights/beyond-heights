@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
 
@@ -24,12 +25,12 @@ const Navbar: React.FC = () => {
           >
             REGISTER
           </a>
-          <a 
-            href="/donate" 
+          <Link 
+            to="/donate" 
             className="bg-gradient-to-r from-red-600 to-red-500 text-white px-4 md:px-8 py-2 md:py-2.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:from-red-500 hover:to-red-400 transition-all duration-300 active:scale-95 shadow-lg shadow-red-600/40 inline-block text-center"
           >
             DONATE
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

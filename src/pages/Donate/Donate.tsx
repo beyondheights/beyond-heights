@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Heart, ArrowLeft, Check, Upload, Loader2, AlertCircle, Copy } from 'lucide-react';
 import { GOOGLE_SHEETS_WEB_APP_URL } from './config';
 
@@ -112,12 +113,12 @@ const Donate: React.FC = () => {
           <p className="text-neutral-400 font-medium leading-relaxed">
             Your donation has been received. We'll verify the payment and reach out to you shortly.
           </p>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-block bg-[#05112D] text-white px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -127,13 +128,13 @@ const Donate: React.FC = () => {
     <div className="min-h-screen bg-neutral-950 pt-32 pb-20 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
         {/* Back Link */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex items-center gap-2 text-neutral-500 hover:text-white text-xs font-bold uppercase tracking-widest transition-colors mb-12 group"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
           Back to Home
-        </a>
+        </Link>
 
         <div className="grid lg:grid-cols-5 gap-16 items-start">
           {/* Left: QR Code & Info */}
