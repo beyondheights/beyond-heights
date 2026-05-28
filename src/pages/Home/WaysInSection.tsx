@@ -44,7 +44,7 @@ const WaysInSection: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 {card.tag && (
-                  <div className="absolute top-4 left-4 bg-[#c6ff00] text-black px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em]">
+                  <div className="absolute top-4 left-4 bg-[#05112D] text-white px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em]">
                     {card.tag}
                   </div>
                 )}
@@ -66,12 +66,12 @@ const WaysInSection: React.FC = () => {
                       href={card.href}
                       target={card.href.startsWith('http') ? "_blank" : undefined}
                       rel={card.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                      className="bg-[#c6ff00] hover:bg-black hover:text-white text-black px-8 py-3 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md transform active:scale-95 cursor-pointer inline-block text-center"
+                      className="bg-[#05112D] hover:bg-black hover:text-white text-white px-8 py-3 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md transform active:scale-95 cursor-pointer inline-block text-center"
                     >
                       {card.buttonText}
                     </a>
                   ) : (
-                    <button className="bg-[#c6ff00] hover:bg-black hover:text-white text-black px-8 py-3 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md transform active:scale-95 cursor-pointer">
+                    <button className="bg-[#05112D] hover:bg-black hover:text-white text-white px-8 py-3 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md transform active:scale-95 cursor-pointer">
                       {card.buttonText}
                     </button>
                   )}

@@ -53,10 +53,10 @@ const Progress: React.FC = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="h-16 w-[2px] bg-[#c6ff00]/20 relative overflow-hidden hidden lg:block">
-                     <div className="absolute top-0 left-0 w-full h-1/2 bg-[#c6ff00]" />
+                  <div className="h-16 w-[2px] bg-[#05112D]/20 relative overflow-hidden hidden lg:block">
+                     <div className="absolute top-0 left-0 w-full h-1/2 bg-[#05112D]" />
                   </div>
-                  <span className="text-6xl md:text-7xl font-black italic tracking-tighter text-[#c6ff00] leading-none select-none">
+                  <span className="text-6xl md:text-7xl font-black italic tracking-tighter text-white drop-shadow-[0_0_15px_rgba(5,17,45,0.8)] leading-none select-none">
                     {point.id}
                   </span>
                 </div>
@@ -66,9 +66,9 @@ const Progress: React.FC = () => {
 
           {/* Center Image */}
           <div className="relative z-10 order-1 lg:order-2">
-            <div className="absolute -inset-8 bg-[#c6ff00]/5 blur-3xl rounded-full" />
+            <div className="absolute -inset-8 bg-[#05112D]/5 blur-3xl rounded-full" />
             <div className="w-64 h-64 md:w-[450px] md:h-[450px] rounded-full border-4 border-white/5 p-4 relative bg-neutral-900 shadow-2xl overflow-hidden group">
-               <div className="absolute inset-0 bg-gradient-to-t from-[#c6ff00]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
+               <div className="absolute inset-0 bg-gradient-to-t from-[#05112D]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
                <img 
                 src={centerImageUrl} 
                 alt="Running Progress" 
@@ -82,11 +82,11 @@ const Progress: React.FC = () => {
             {points.filter(p => p.position === 'right').map((point) => (
               <div key={point.id} className="flex flex-col lg:flex-row items-center lg:items-end gap-6 group">
                  <div className="flex items-center gap-4">
-                  <span className="text-6xl md:text-7xl font-black italic tracking-tighter text-[#c6ff00] leading-none select-none">
+                  <span className="text-6xl md:text-7xl font-black italic tracking-tighter text-white drop-shadow-[0_0_15px_rgba(5,17,45,0.8)] leading-none select-none">
                     {point.id}
                   </span>
-                  <div className="h-16 w-[2px] bg-[#c6ff00]/20 relative overflow-hidden hidden lg:block">
-                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#c6ff00]" />
+                  <div className="h-16 w-[2px] bg-[#05112D]/20 relative overflow-hidden hidden lg:block">
+                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#05112D]" />
                   </div>
                 </div>
                 <div className="space-y-2 max-w-xs transition-transform duration-500 group-hover:translate-x-2">

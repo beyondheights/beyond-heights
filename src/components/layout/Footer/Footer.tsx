@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                   href={social.href} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-11 h-11 rounded-full bg-neutral-900/50 border border-neutral-800 flex items-center justify-center hover:bg-[#c6ff00] hover:text-black hover:border-[#c6ff00] transition-all duration-300 group"
+                  className="w-11 h-11 rounded-full bg-neutral-900/50 border border-neutral-800 flex items-center justify-center hover:bg-[#05112D] hover:text-white hover:border-[#05112D] transition-all duration-300 group"
                 >
                   <social.Icon size={18} className="group-hover:scale-110 transition-transform" />
                 </a>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links Column */}
           <div className="space-y-10">
-            <h3 className="text-[#c6ff00] text-[11px] font-black uppercase tracking-[0.3em]">Quick Links</h3>
+            <h3 className="text-white text-[11px] font-black uppercase tracking-[0.3em] border-l-2 border-[#05112D] pl-4">Quick Links</h3>
             <ul className="space-y-5">
               {[
                 { name: 'Home Page', href: '#' },
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                     className="text-neutral-400 hover:text-white transition-all flex items-center group"
                   >
                     <span className="text-[12px] font-bold uppercase tracking-widest">{item.name}</span>
-                    <ArrowUpRight size={14} className="ml-2 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#c6ff00]" />
+                    <ArrowUpRight size={14} className="ml-2 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-white" />
                   </a>
                 </li>
               ))}
@@ -65,23 +65,26 @@ const Footer: React.FC = () => {
 
           {/* Contact Column */}
           <div className="space-y-10">
-            <h3 className="text-[#c6ff00] text-[11px] font-black uppercase tracking-[0.3em]">Get in Touch</h3>
+            <h3 className="text-white text-[11px] font-black uppercase tracking-[0.3em] border-l-2 border-[#05112D] pl-4">Get in Touch</h3>
             <ul className="space-y-8">
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#c6ff00]/10 transition-colors">
-                  <MapPin className="text-[#c6ff00]" size={18} />
+                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#05112D]/10 transition-colors">
+                  <MapPin className="text-white" size={18} />
                 </div>
-                <span className="text-[13px] text-neutral-400 leading-relaxed font-bold pt-1">123 Marathon Avenue, Suite 100, Fitness City, FC 54321</span>
+                <span className="text-[13px] text-neutral-400 leading-relaxed font-bold pt-1">Rezilyens System Software India Pvt Ltd
+Door No :2/3 & 2/4 ,  1st floor Mullai Nagar,
+JV Building,Maruthamalai Road,Vadavalli,
+Coimbatore-641041</span>
               </li>
               <li className="flex items-center gap-4 group">
-                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#c6ff00]/10 transition-colors">
-                  <Phone className="text-[#c6ff00]" size={18} />
+                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#05112D]/10 transition-colors">
+                  <Phone className="text-white" size={18} />
                 </div>
                 <span className="text-[13px] text-neutral-400 font-bold">+91 95971 95741</span>
               </li>
               <li className="flex items-center gap-4 group">
-                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#c6ff00]/10 transition-colors">
-                  <Mail className="text-[#c6ff00]" size={18} />
+                <div className="w-10 h-10 rounded-lg bg-neutral-900 flex items-center justify-center shrink-0 group-hover:bg-[#05112D]/10 transition-colors">
+                  <Mail className="text-white" size={18} />
                 </div>
                 <span className="text-[13px] text-neutral-400 font-bold">beyondheights.com@gmail.com</span>
               </li>
@@ -90,7 +93,7 @@ const Footer: React.FC = () => {
 
           {/* Newsletter Column */}
           <div className="space-y-10">
-            <h3 className="text-[#c6ff00] text-[11px] font-black uppercase tracking-[0.3em]">Newsletter</h3>
+            <h3 className="text-white text-[11px] font-black uppercase tracking-[0.3em] border-l-2 border-[#05112D] pl-4">Newsletter</h3>
             <div className="space-y-6">
               <p className="text-neutral-500 text-[12px] font-bold uppercase tracking-tighter leading-snug">
                 Stay updated with our latest news and athletic community events.
@@ -100,10 +103,10 @@ const Footer: React.FC = () => {
                   <input 
                     type="email" 
                     placeholder="YOUR EMAIL" 
-                    className="w-full bg-neutral-900 border border-neutral-800 rounded-sm px-5 py-4 text-[10px] font-black tracking-widest focus:ring-1 focus:ring-[#c6ff00] focus:border-[#c6ff00] transition-all outline-none"
+                    className="w-full bg-neutral-900 border border-neutral-800 rounded-sm px-5 py-4 text-[10px] font-black tracking-widest focus:ring-1 focus:ring-[#05112D] focus:border-[#05112D] transition-all outline-none"
                   />
                 </div>
-                <button className="w-full bg-[#c6ff00] text-black py-4 rounded-sm text-[10px] font-black uppercase tracking-[0.25em] hover:bg-white transition-all duration-300 transform active:scale-[0.98] shadow-lg shadow-[#c6ff00]/10">
+                <button className="w-full bg-[#05112D] text-white py-4 rounded-sm text-[10px] font-black uppercase tracking-[0.25em] hover:bg-white hover:text-black transition-all duration-300 transform active:scale-[0.98] shadow-lg shadow-[#05112D]/10">
                   Subscribe Now
                 </button>
               </form>
@@ -118,9 +121,9 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex gap-10">
             {['Privacy Policy', 'Terms of Service'].map((item) => (
-              <a key={item} href="#" className="text-neutral-600 hover:text-[#c6ff00] text-[9px] font-black uppercase tracking-[0.3em] transition-colors relative group">
+              <a key={item} href="#" className="text-neutral-600 hover:text-[#05112D] text-[9px] font-black uppercase tracking-[0.3em] transition-colors relative group">
                 {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#c6ff00] group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#05112D] group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>

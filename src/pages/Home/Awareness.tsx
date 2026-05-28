@@ -32,13 +32,13 @@ const Awareness: React.FC = () => {
           </div>
 
           {/* Accent Line */}
-          <div className="w-full h-[2px] bg-[#c6ff00]/30 relative">
-            <div className="absolute left-0 top-0 h-full w-1/3 bg-[#c6ff00]" />
+          <div className="w-full h-[2px] bg-[#05112D]/30 relative">
+            <div className="absolute left-0 top-0 h-full w-1/3 bg-[#05112D]" />
           </div>
 
           {/* Typography */}
           <div className="space-y-6">
-            <span className="block text-neutral-500 text-xs font-black uppercase tracking-[0.2em] italic">
+            <span className="block text-white text-xs font-black uppercase tracking-[0.2em] italic border-l-4 border-[#05112D] pl-3">
               THIS MARATHON EXISTS TO CHANGE THAT.
             </span>
             
